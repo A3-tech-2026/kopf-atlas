@@ -26,12 +26,14 @@
       <button data-modus="atlas" class="an">Atlas</button>
       <button data-modus="play">Play</button>
       <button data-modus="quiz">Quiz</button>
+      <button data-modus="welt">Zahn-Welt</button>
     </nav>
     <button id="quellenKnopf" class="rund" aria-label="Quellen und Lizenzen" title="Quellen und Lizenzen">i</button>
   </header>
 
   <aside id="links" aria-label="Ebenen und Ansichten">
     <button class="zu" data-zu="links" aria-label="Schliessen">×</button>
+    <div id="weltLinks" hidden></div>
     <h2>Ebenen</h2>
     <div id="ebenen"></div>
     <label class="schalter"><input type="checkbox" id="punkteAn" checked><span class="regler"></span><span>Punkte (Details)</span></label>
@@ -53,6 +55,9 @@
     <div id="lade"><div><p>Kopf-Atlas wird geladen …</p><div class="balken"><i id="ladeBalken"></i></div></div></div>
     <p id="makroHinweis" hidden>Schematisches Modell (nicht massstabsgetreu): Schnitt durch einen unteren Molaren im Zahnfach.
       <span><button class="btn klein" data-lupe="schmelzprisma">Lupe: Schmelzprismen</button><button class="btn klein" data-lupe="dentinkanaelchen">Lupe: Dentinkanälchen</button><button class="btn klein" data-lupe="">Ganzer Zahn</button></span></p>
+    <div id="weltPfad" hidden></div>
+    <canvas id="weltWuerfel" width="208" height="208" hidden aria-label="Orientierung am Zahn"></canvas>
+    <div id="weltSpiel" hidden></div>
     <div id="scanLeiste" hidden>
       <b>Beispielgebiss (Intraoralscan)</b>
       <label class="schalter klein"><input type="checkbox" id="scanOk" checked><span class="regler"></span><span>Oberkiefer</span></label>
@@ -95,6 +100,7 @@
     <button data-modus="atlas" class="an">◉<span>Atlas</span></button>
     <button data-modus="play">▶<span>Play</span></button>
     <button data-modus="quiz">?<span>Quiz</span></button>
+    <button data-modus="welt">◈<span>Zahn-Welt</span></button>
     <button data-auf="rechts">▤<span>Info</span></button>
   </nav>
 </div>
