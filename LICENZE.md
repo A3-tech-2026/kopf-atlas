@@ -17,6 +17,14 @@ International (https://creativecommons.org/licenses/by-sa/4.0/).
 I file nella cartella `app/modelli/scan/` (nel sito: `modelli/scan/`) NON derivano da Z-Anatomy e NON sono sotto licenza Creative Commons.
 Sono uno scan intraorale fatto apposta per questa app ("Beispielgebiss"). Tutti i diritti riservati: si possono guardare dentro l'app, non riusare altrove.
 
+## Video della Zahn-Welt (PROMPT 8)
+I video in `app/filme/` (nel sito: `filme/`) sono animazioni fatte per questa app con Blender (script in `strumenti/film/`). Dove mostrano i denti del modello Z-Anatomy
+valgono la stessa attribuzione e la stessa licenza CC BY-SA 4.0. Nessuna figura dei libri di scuola e' copiata o ridisegnata.
+
+## Modulo Okklusion (PROMPT 8)
+Fonti dei contenuti: G. Seubert, "Basiswissen zur naturgemaessen Aufwachstechnik nach D. Schulz" (Verlag Neuer Merkur, 1995) e il libro di anatomia della scuola.
+I libri sono protetti: nell'app ci sono solo testi scritti con parole proprie, con capitolo e pagina; nessuna figura, nessuna frase copiata.
+
 ## Librerie
 - three.js - licenza MIT - https://threejs.org
 - meshoptimizer - licenza MIT - https://github.com/zeux/meshoptimizer
