@@ -37,10 +37,18 @@
     <label class="schalter"><input type="checkbox" id="punkteAn" checked><span class="regler"></span><span>Punkte (Details)</span></label>
     <h2>Ansichten</h2>
     <div id="ansichten"></div>
+    <h2>Einstellungen</h2>
+    <label class="schalter"><input type="checkbox" id="detailHoch"><span class="regler"></span><span id="detailText">Detail: hoch</span></label>
   </aside>
 
   <main id="mitte">
     <canvas id="szene" aria-label="3D-Modell"></canvas>
+    <div id="werkzeuge">
+      <button id="bKnopf" class="btn klein" aria-pressed="false">Beschriftung</button>
+      <button id="sKnopf" class="btn klein">Schnitt</button>
+    </div>
+    <div id="schnittPanel" hidden></div>
+    <button id="neuVersion" class="btn haupt" hidden>Neue Version verfügbar – jetzt laden</button>
     <div id="lade"><div><p>Kopf-Atlas wird geladen …</p><div class="balken"><i id="ladeBalken"></i></div></div></div>
     <p id="makroHinweis" hidden>Schematisches Modell (nicht massstabsgetreu): Schnitt durch einen unteren Molaren im Zahnfach.
       <span><button class="btn klein" data-lupe="schmelzprisma">Lupe: Schmelzprismen</button><button class="btn klein" data-lupe="dentinkanaelchen">Lupe: Dentinkanälchen</button><button class="btn klein" data-lupe="">Ganzer Zahn</button></span></p>
@@ -70,6 +78,7 @@
       <p id="stimmeMeldung" role="status"></p>
     </div>
     <div id="karte"></div>
+    <div id="listePanel" hidden></div>
     <div id="playPanel" hidden></div>
     <div id="quizPanel" hidden></div>
   </aside>
