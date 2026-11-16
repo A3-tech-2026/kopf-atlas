@@ -1,5 +1,5 @@
 // Service worker: dopo la prima apertura la app funziona senza internet.
-const CACHE = 'kopfatlas-2026-11-16-831f18e';
+const CACHE = 'kopfatlas-2026-11-16-8f6a70d';
 const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png","modelli/haut.glb","modelli/muskeln.glb","modelli/knochen.glb","modelli/zaehne.glb","modelli/kiefergelenk.glb"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(DATEIEN)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
@@ -12,6 +12,6 @@ self.addEventListener('fetch', e => {
     const hit = await c.match(e.request, { ignoreSearch: true }) || (e.request.mode === 'navigate' ? await c.match('index.html') : null);
     if (hit) return hit;
     try { const r = await fetch(e.request); if (r.ok) c.put(e.request, r.clone()); return r; }
-    catch (err) { return (await c.match('index.html')) || Response.error(); }
+    catch (err) { return (e.request.mode === 'navigate' && await c.match('index.html')) || Response.error(); }
   }));
 });
