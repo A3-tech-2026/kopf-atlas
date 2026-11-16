@@ -8,7 +8,7 @@ I modelli 3D di questo progetto (cartelle `modelli/` e `app/modelli/`) derivano 
 - **BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan**
   https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html
 
-Sono stati scelti (testa, denti, muscoli masticatori, articolazione temporo-mandibolare, pelle),
+Sono stati scelti (testa, denti, muscoli, articolazione temporo-mandibolare, pelle, lingua e mucosa, nervi, vasi, ghiandole salivari),
 uniti per pezzo e compressi con `strumenti/esporta_glb.py` e `strumenti/comprimi_modelli.mjs`.
 I modelli derivati sono distribuiti con la stessa licenza: Creative Commons Attribution-ShareAlike 4.0
 International (https://creativecommons.org/licenses/by-sa/4.0/).
