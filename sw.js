@@ -1,7 +1,9 @@
 // Service worker: dopo la prima apertura la app funziona senza internet.
-const CACHE = 'kopfatlas-2026-11-16-ef39b85';
+const CACHE = 'kopfatlas-2026-11-16-c9335ad';
 const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png","modelli/haut.glb","modelli/muskeln.glb","modelli/knochen.glb","modelli/zaehne.glb","modelli/kiefergelenk.glb"];
-self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(DATEIEN)).then(() => self.skipWaiting())); });
+// cache: 'reload' = prende i file dal server e non dalla memoria del browser (GitHub Pages li tiene 10 minuti):
+// senza, una versione nuova potrebbe salvare file vecchi.
+self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(DATEIEN.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith('kopfatlas-') && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
