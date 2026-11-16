@@ -13,6 +13,10 @@ uniti per pezzo e compressi con `strumenti/esporta_glb.py` e `strumenti/comprimi
 I modelli derivati sono distribuiti con la stessa licenza: Creative Commons Attribution-ShareAlike 4.0
 International (https://creativecommons.org/licenses/by-sa/4.0/).
 
+## Scan intraorale (Beispielgebiss)
+I file nella cartella `app/modelli/scan/` (nel sito: `modelli/scan/`) NON derivano da Z-Anatomy e NON sono sotto licenza Creative Commons.
+Sono uno scan intraorale fatto apposta per questa app ("Beispielgebiss"). Tutti i diritti riservati: si possono guardare dentro l'app, non riusare altrove.
+
 ## Librerie
 - three.js - licenza MIT - https://threejs.org
 - meshoptimizer - licenza MIT - https://github.com/zeux/meshoptimizer

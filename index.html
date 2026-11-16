@@ -53,6 +53,12 @@
     <div id="lade"><div><p>Kopf-Atlas wird geladen …</p><div class="balken"><i id="ladeBalken"></i></div></div></div>
     <p id="makroHinweis" hidden>Schematisches Modell (nicht massstabsgetreu): Schnitt durch einen unteren Molaren im Zahnfach.
       <span><button class="btn klein" data-lupe="schmelzprisma">Lupe: Schmelzprismen</button><button class="btn klein" data-lupe="dentinkanaelchen">Lupe: Dentinkanälchen</button><button class="btn klein" data-lupe="">Ganzer Zahn</button></span></p>
+    <div id="scanLeiste" hidden>
+      <b>Beispielgebiss (Intraoralscan)</b>
+      <label class="schalter klein"><input type="checkbox" id="scanOk" checked><span class="regler"></span><span>Oberkiefer</span></label>
+      <label class="schalter klein"><input type="checkbox" id="scanUk" checked><span class="regler"></span><span>Unterkiefer</span></label>
+      <label class="scan-auf"><span>Mund öffnen <small>(schematisch)</small></span><input type="range" id="scanAuf" min="0" max="1" step="0.01" value="0"></label>
+    </div>
     <div id="demoLeiste" hidden>
       <div class="d-text"><b id="dTitel"></b><span id="dText"></span></div>
       <div class="d-knoepfe">

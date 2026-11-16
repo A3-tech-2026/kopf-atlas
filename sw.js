@@ -1,5 +1,5 @@
 // Service worker: dopo la prima apertura la app funziona senza internet.
-const CACHE = 'kopfatlas-2026-11-16-94adb14';
+const CACHE = 'kopfatlas-2026-11-16-77ad147';
 const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png"];
 // cache: 'reload' = prende i file dal server e non dalla memoria del browser (GitHub Pages li tiene 10 minuti):
 // senza, una versione nuova potrebbe salvare file vecchi.
@@ -8,7 +8,7 @@ self.addEventListener('install', e => {
   e.waitUntil((async () => {
     const c = await caches.open(CACHE);
     await c.addAll(DATEIEN.map(u => new Request(u, { cache: 'reload' })));
-    // Le pagine aperte sanno mostrare la scritta "Neue Version"? Quelle vecchie (prima del 16.11.2026) no:
+    // Le pagine aperte sanno mostrare la scritta "Neue Version"? Quelle della prima versione no:
     // se nessuna risponde, la versione nuova parte da sola, come prima.
     const seiten = await self.clients.matchAll({ includeUncontrolled: true, type: 'window' });
     seiten.forEach(s => s.postMessage('neue_version'));
