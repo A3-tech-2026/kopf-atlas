@@ -1,5 +1,5 @@
 // Service worker: dopo la prima apertura la app funziona senza internet.
-const CACHE = 'kopfatlas-2026-11-16-387af40';
+const CACHE = 'kopfatlas-2026-11-16-831f18e';
 const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png","modelli/haut.glb","modelli/muskeln.glb","modelli/knochen.glb","modelli/zaehne.glb","modelli/kiefergelenk.glb"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(DATEIEN)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
