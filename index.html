@@ -56,9 +56,12 @@
     <div id="lade"><div><p>Kopf-Atlas wird geladen …</p><div class="balken"><i id="ladeBalken"></i></div></div></div>
     <p id="makroHinweis" hidden>Schematisches Modell (nicht massstabsgetreu): Schnitt durch einen unteren Molaren im Zahnfach.
       <span><button class="btn klein" data-lupe="schmelzprisma">Lupe: Schmelzprismen</button><button class="btn klein" data-lupe="dentinkanaelchen">Lupe: Dentinkanälchen</button><button class="btn klein" data-lupe="">Ganzer Zahn</button></span></p>
+    <div id="zeigTitel" hidden><b></b><span></span><button id="zeigZu" class="btn klein" aria-label="Zeigen beenden">■ Stopp</button></div>
+    <div id="gelenkFenster" hidden><div data-g="r"><b></b></div><div data-g="l"><b></b></div></div>
     <div id="filmKasten" hidden></div>
     <div id="weltPfad" hidden></div>
-    <canvas id="weltWuerfel" width="208" height="208" hidden aria-label="Orientierung am Zahn"></canvas>
+    <canvas id="weltWuerfel" width="336" height="336" hidden aria-label="Navigationskugel: ziehen dreht das Modell, ein Punkt wählt die Ansicht"></canvas>
+    <button id="kugelModus" class="btn klein" hidden>Kopf-Richtungen</button>
     <div id="weltSpiel" hidden></div>
     <div id="scanLeiste" hidden>
       <b>Beispielgebiss (Intraoralscan)</b>
