@@ -1,6 +1,6 @@
 // Service worker: dopo la prima apertura la app funziona senza internet.
-const CACHE = 'kopfatlas-2026-11-17-eb41f93';
-const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png"];
+const CACHE = 'kopfatlas-2026-11-17-e5936a2';
+const DATEIEN = ["./","index.html","app.js","app.css","daten.js","manifest.webmanifest","icon-180.png","icon-192.png","icon-512.png","texturen/knochen.jpg","texturen/muskel.jpg","bilder/dentinkanaelchen.jpg","bilder/haut_schichten.jpg","bilder/schmelzprismen.jpg","bilder/zahnloser_oberkiefer.jpg","bilder/zahnloser_unterkiefer.jpg"];
 // cache: 'reload' = prende i file dal server e non dalla memoria del browser (GitHub Pages li tiene 10 minuti):
 // senza, una versione nuova potrebbe salvare file vecchi.
 let kannBanner = false, alteSeiten = false;
