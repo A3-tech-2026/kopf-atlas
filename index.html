@@ -2,121 +2,32 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#18220d">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="A3 Dental Tech">
-<title>A3 Dental Tech</title>
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon-192.png">
-<link rel="apple-touch-icon" href="icon-180.png">
-<link rel="stylesheet" href="app.css">
+<title>A3 Dental Tech – Neue Adresse</title>
+<meta http-equiv="refresh" content="6; url=https://a3-dental-tech.github.io/kopf-atlas/">
+<link rel="canonical" href="https://a3-dental-tech.github.io/kopf-atlas/">
+<style>
+html,body{margin:0;height:100%;background:#1f2b12;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;box-sizing:border-box}
+h1{font-size:1.6rem;margin:0 0 8px;color:#c0d787}
+p{margin:6px 0;max-width:34em}
+a.knopf{display:inline-block;margin:18px 0 10px;padding:14px 22px;border-radius:999px;background:#c0d787;color:#18220d;font-weight:700;text-decoration:none;font-size:1.1rem;word-break:break-all}
+small{color:#d7dccd}
+</style>
 </head>
-<body class="modus-atlas">
-<div id="app">
-  <header id="oben">
-    <h1><img src="data:image/webp;base64,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" alt="a3 dental">A3 Dental <span>Tech</span></h1>
-    <div id="suche">
-      <input id="suchfeld" type="search" placeholder="Suchen: deutsch oder lateinisch" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Suchen">
-      <ul id="treffer" hidden></ul>
-    </div>
-    <nav id="modi" aria-label="Modus">
-      <button data-modus="atlas" class="an">Atlas</button>
-      <button data-modus="play">Play</button>
-      <button data-modus="quiz">Quiz</button>
-      <button data-modus="welt">Zahn-Welt</button>
-      <button data-modus="okk">Okklusion</button>
-    </nav>
-    <button id="quellenKnopf" class="rund" aria-label="Quellen und Lizenzen" title="Quellen und Lizenzen">i</button>
-  </header>
-
-  <aside id="links" aria-label="Ebenen und Ansichten">
-    <button class="zu" data-zu="links" aria-label="Schliessen">×</button>
-    <div id="weltLinks" hidden></div>
-    <h2>Ebenen</h2>
-    <div id="ebenen"></div>
-    <label class="schalter"><input type="checkbox" id="punkteAn" checked><span class="regler"></span><span>Punkte (Details)</span></label>
-    <h2>Ansichten</h2>
-    <div id="ansichten"></div>
-    <h2>Einstellungen</h2>
-    <label class="schalter"><input type="checkbox" id="detailHoch"><span class="regler"></span><span id="detailText">Detail: hoch</span></label>
-    <p class="q-version" id="versionLinks"></p>
-  </aside>
-
-  <main id="mitte">
-    <canvas id="szene" aria-label="3D-Modell"></canvas>
-    <div id="werkzeuge">
-      <button id="bKnopf" class="btn klein" aria-pressed="false">Beschriftung</button>
-      <button id="sKnopf" class="btn klein">Schnitt</button>
-    </div>
-    <div id="schnittPanel" hidden></div>
-    <button id="neuVersion" class="btn haupt" hidden>Neue Version verfügbar – jetzt laden</button>
-    <div id="lade"><div><p>A3 Dental Tech wird geladen …</p><div class="balken"><i id="ladeBalken"></i></div></div></div>
-    <p id="makroHinweis" hidden>Schematisches Modell (nicht massstabsgetreu): Schnitt durch einen unteren Molaren im Zahnfach.
-      <span><button class="btn klein" data-lupe="schmelzprisma">Lupe: Schmelzprismen</button><button class="btn klein" data-lupe="dentinkanaelchen">Lupe: Dentinkanälchen</button><button class="btn klein" data-lupe="">Ganzer Zahn</button></span></p>
-    <div id="tafel" hidden><div class="t-kopf"><b id="tafelTitel"></b><span class="w-schema" id="tafelHinweis"></span><button class="btn klein haupt" id="tafelZu">× Schliessen</button></div><div class="t-bild"><img id="tafelBild" alt=""><span id="tafelPunkte"></span></div><ol id="tafelLegende"></ol><small id="tafelQuelle"></small></div>
-    <div id="zeigTitel" hidden><b></b><span></span><button id="zeigZu" class="btn klein" aria-label="Zeigen beenden">■ Stopp</button></div>
-    <div id="gelenkFenster" hidden><div class="gf-reihe"><div data-g="sag"><b></b><span class="gf-punkte"></span><span class="gf-knopf"><button type="button" data-gz="-1" aria-label="kleiner">−</button><button type="button" data-gz="1" aria-label="grösser">+</button><button type="button" data-gm="1" aria-pressed="false">Muskeln</button></span></div><div data-g="fro"><b></b><span class="gf-punkte"></span><span class="gf-knopf"><button type="button" data-gz="-1" aria-label="kleiner">−</button><button type="button" data-gz="1" aria-label="grösser">+</button><button type="button" data-gm="1" aria-pressed="false">Muskeln</button></span></div></div><div class="gf-zeile"><b id="gfSeiten"></b><button class="btn klein" id="gfWechsel">anderes Gelenk</button></div><ol id="gfLegende" hidden></ol></div>
-    <div id="filmKasten" hidden></div>
-    <div id="weltPfad" hidden></div>
-    <canvas id="weltWuerfel" width="336" height="336" hidden aria-label="Navigationskugel: ziehen dreht das Modell, ein Punkt wählt die Ansicht"></canvas>
-    <button id="kugelModus" class="btn klein" hidden>Kopf-Richtungen</button>
-    <div id="weltSpiel" hidden></div>
-    <div id="scanLeiste" hidden>
-      <b>Beispielgebiss (Intraoralscan)</b>
-      <label class="schalter klein"><input type="checkbox" id="scanOk" checked><span class="regler"></span><span>Oberkiefer</span></label>
-      <label class="schalter klein"><input type="checkbox" id="scanUk" checked><span class="regler"></span><span>Unterkiefer</span></label>
-      <label class="scan-auf"><span>Mund öffnen <small>(schematisch)</small></span><input type="range" id="scanAuf" min="0" max="1" step="0.01" value="0"></label>
-    </div>
-    <div id="demoLeiste" hidden>
-      <div class="d-text"><b id="dTitel"></b><span id="dText"></span></div>
-      <div class="d-knoepfe">
-        <button id="dPlay" class="btn haupt">▶ Play</button>
-        <button id="dPause" class="btn">❚❚ Pause</button>
-        <button id="dWeiter" class="btn">Weiter ▶▶</button>
-        <span id="dZahl"></span>
-      </div>
-      <div class="balken"><i id="dBalken"></i></div>
-    </div>
-    <div id="toast" hidden></div>
-  </main>
-
-  <aside id="rechts" aria-label="Info">
-    <button id="griff" aria-label="Karte öffnen oder schliessen"><i></i></button>
-    <div id="vorleseLeiste">
-      <button id="vorlesen" class="btn haupt">🔊 Vorlesen</button>
-      <button id="stopp" class="btn" hidden>■ Stopp</button>
-      <label class="schalter klein"><input type="checkbox" id="autoLesen"><span class="regler"></span><span>Automatisch vorlesen</span></label>
-      <details id="stimmeBox"><summary>Stimme</summary>
-        <label>Stimme <select id="stimme"></select></label>
-        <label>Tempo <input type="range" id="tempo" min="0.6" max="1.4" step="0.05"> <output id="tempoWert"></output></label>
-      </details>
-      <p id="stimmeMeldung" role="status"></p>
-    </div>
-    <div id="modulInfo" hidden></div>
-    <div id="karte"></div>
-    <div id="listePanel" hidden></div>
-    <div id="playPanel" hidden></div>
-    <div id="quizPanel" hidden></div>
-  </aside>
-
-  <nav id="unten" aria-label="Navigation">
-    <button data-auf="links">☰<span>Ebenen</span></button>
-    <button data-modus="atlas" class="an">◉<span>Atlas</span></button>
-    <button data-modus="play">▶<span>Play</span></button>
-    <button data-modus="quiz">?<span>Quiz</span></button>
-    <button data-modus="welt">◈<span>Zahn-Welt</span></button>
-    <button data-modus="okk">⇄<span>Okklusion</span></button>
-    <button data-auf="rechts">▤<span>Info</span></button>
-  </nav>
-</div>
-
-<dialog id="quellen"><div class="dlg"><button class="zu" data-dlg="quellen" aria-label="Schliessen">×</button><div id="quellenInhalt"></div></div></dialog>
-<dialog id="infoDlg"><div class="dlg"><button class="zu" data-dlg="infoDlg" aria-label="Schliessen">×</button>
-  <div class="dlg-lesen"><button id="infoVorlesen" class="btn haupt">🔊 Vorlesen</button><button id="infoStopp" class="btn">■ Stopp</button></div><div id="infoInhalt"></div></div></dialog>
-<script src="daten.js"></script>
-<script src="app.js"></script>
+<body>
+<main>
+  <h1>Neue Adresse</h1>
+  <p>Der Kopf-Atlas von A3 Dental Tech ist umgezogen.</p>
+  <a class="knopf" id="neu" href="https://a3-dental-tech.github.io/kopf-atlas/">a3-dental-tech.github.io/kopf-atlas</a>
+  <p>Du wirst in wenigen Sekunden automatisch weitergeleitet.</p>
+  <p><small>Hast du die App auf dem Telefon installiert? Öffne die neue Adresse und füge sie neu zum Startbildschirm hinzu. Die alte App kannst du löschen.</small></p>
+</main>
+<script>
+// La vecchia app installata: il service worker nuovo di questo indirizzo cancella la memoria vecchia e porta qui; questa pagina porta al nuovo indirizzo.
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+setTimeout(function () { location.replace(document.getElementById('neu').href); }, 5000);
+</script>
 </body>
 </html>

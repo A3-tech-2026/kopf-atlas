@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#18220d">
+<title>A3 Dental Tech – Neue Adresse</title>
+<meta http-equiv="refresh" content="6; url=https://a3-dental-tech.github.io/kopf-atlas/">
+<link rel="canonical" href="https://a3-dental-tech.github.io/kopf-atlas/">
+<style>
+html,body{margin:0;height:100%;background:#1f2b12;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
+main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;box-sizing:border-box}
+h1{font-size:1.6rem;margin:0 0 8px;color:#c0d787}
+p{margin:6px 0;max-width:34em}
+a.knopf{display:inline-block;margin:18px 0 10px;padding:14px 22px;border-radius:999px;background:#c0d787;color:#18220d;font-weight:700;text-decoration:none;font-size:1.1rem;word-break:break-all}
+small{color:#d7dccd}
+</style>
+</head>
+<body>
+<main>
+  <h1>Neue Adresse</h1>
+  <p>Der Kopf-Atlas von A3 Dental Tech ist umgezogen.</p>
+  <a class="knopf" id="neu" href="https://a3-dental-tech.github.io/kopf-atlas/">a3-dental-tech.github.io/kopf-atlas</a>
+  <p>Du wirst in wenigen Sekunden automatisch weitergeleitet.</p>
+  <p><small>Hast du die App auf dem Telefon installiert? Öffne die neue Adresse und füge sie neu zum Startbildschirm hinzu. Die alte App kannst du löschen.</small></p>
+</main>
+<script>
+// La vecchia app installata: il service worker nuovo di questo indirizzo cancella la memoria vecchia e porta qui; questa pagina porta al nuovo indirizzo.
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+setTimeout(function () { location.replace(document.getElementById('neu').href); }, 5000);
+</script>
+</body>
+</html>
